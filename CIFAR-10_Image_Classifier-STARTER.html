@@ -14743,7 +14743,7 @@ Go back and check your model architecture, loss function, and optimizer to make 
 </div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
 <div class="jp-Cell-inputWrapper">
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[54]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## YOUR CODE HERE ##</span>
@@ -14782,9 +14782,33 @@ Go back and check your model architecture, loss function, and optimizer to make 
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>Model Accuracy: 71.21962915601023
+<pre>Model Accuracy: 71.19765025575447
 </pre>
 </div>
+</div>
+
+<div class="jp-OutputArea-child">
+
+    
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[23]:</div>
+
+
+
+
+<div class="jp-RenderedText jp-OutputArea-output jp-OutputArea-executeResult" data-mime-type="text/plain">
+<pre>MyNetwork(
+  (conv1): Conv2d(3, 32, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (conv2): Conv2d(32, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (conv3): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (pool): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (fc1): Linear(in_features=2048, out_features=1024, bias=True)
+  (fc2): Linear(in_features=1024, out_features=512, bias=True)
+  (fc3): Linear(in_features=512, out_features=256, bias=True)
+  (fc4): Linear(in_features=256, out_features=10, bias=True)
+  (dropout): Dropout(p=0.2, inplace=False)
+)</pre>
+</div>
+
 </div>
 
 </div>
